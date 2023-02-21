@@ -1,5 +1,17 @@
-const App = () => {
-  return <h1 className="text-3xl font-bold underline">Tuong</h1>;
+import { Footer, Navbar, Services, Transactions, Welcome } from "@components";
+
+const App: React.FC = () => {
+  return (
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar />
+        <Welcome />
+      </div>
+      <Services />
+      <Transactions />
+      <Footer />
+    </div>
+  );
 };
 
 export default App;
